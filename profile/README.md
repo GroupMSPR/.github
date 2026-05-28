@@ -177,11 +177,7 @@ Dashboards Grafana préconfigurés pour la visualisation des données de santé.
 git clone https://github.com/GroupMSPR/Health-IA-Workspace.git
 cd Health-IA-Workspace
 
-# 2. Initialiser les fichiers .env
-cp HealthAI-Coach/.env.example HealthAI-Coach/.env
-cp ETL/.env.example ETL/.env
-
-# 3. Lancer le déploiement
+# 2. Lancer le déploiement
 start.bat
 ```
 
