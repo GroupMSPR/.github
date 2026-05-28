@@ -301,14 +301,14 @@ Pour chaque dashboard :
 ## 🛠️ Stack technologique
 
 ### Backend
-- **Framework** : Laravel 10+
+- **Framework** : Laravel 12
 - **Base de données** : PostgreSQL 15
-- **API** : REST avec Swagger
+- **API** : Lomkit REST avec Swagger
 - **Admin** : Filament
-- **Auth** : JWT
+- **Auth** : JWT Sanctum
 
 ### ETL
-- **Langage** : Python 3.10+
+- **Langage** : Python 3.11+
 - **ETL** : Custom pipeline
 - **Sources** : Google Drive (OAuth 2.0)
 - **Destination** : PostgreSQL
