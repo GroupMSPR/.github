@@ -6,12 +6,14 @@ Bienvenue dans l'organisation **GroupMSPR** ! Ce projet est une plateforme compl
 
 ## 📋 Table des matières
 
-- [Vue d'ensemble](#vue-densemble)
-- [Architecture du projet](#architecture-du-projet)
-- [Repositories](#repositories)
-- [Guide de déploiement](#guide-de-déploiement)
-- [Stack technologique](#stack-technologique)
-- [Documentation](#documentation)
+- [Vue d'ensemble](#-vue-densemble)
+- [Architecture du projet](#-architecture-du-projet)
+- [Repositories](#-repositories)
+- [Guide de déploiement](#-guide-de-déploiement)
+- [Stack technologique](#-stack-technologique)
+- [Documentation](#-documentation)
+- [Troubleshooting](#-troubleshooting)
+- [Checklist opérationnelle](#-checklist-opérationnelle)
 
 ---
 
@@ -177,7 +179,11 @@ Dashboards Grafana préconfigurés pour la visualisation des données de santé.
 git clone https://github.com/GroupMSPR/Health-IA-Workspace.git
 cd Health-IA-Workspace
 
-# 2. Lancer le déploiement
+# 2. Initialiser les fichiers .env
+cp HealthAI-Coach/.env.example HealthAI-Coach/.env
+cp ETL/.env.example ETL/.env
+
+# 3. Lancer le déploiement
 start.bat
 ```
 
