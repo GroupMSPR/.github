@@ -6,18 +6,18 @@ Bienvenue dans l'organisation **GroupMSPR** ! Ce projet est une plateforme compl
 
 ## 📋 Table des matières
 
-- [Vue d'ensemble](#-vue-densemble)
-- [Architecture du projet](#-architecture-du-projet)
-- [Repositories](#-repositories)
-- [Guide de déploiement](#-guide-de-déploiement)
-- [Stack technologique](#-stack-technologique)
-- [Documentation](#-documentation)
-- [Troubleshooting](#-troubleshooting)
-- [Checklist opérationnelle](#-checklist-opérationnelle)
+- [Vue d'ensemble](#vue-densemble)
+- [Architecture du projet](#architecture-du-projet)
+- [Repositories](#repositories)
+- [Guide de déploiement](#guide-de-déploiement)
+- [Stack technologique](#stack-technologique)
+- [Documentation](#documentation)
+- [Troubleshooting](#troubleshooting)
+- [Checklist opérationnelle](#checklist-opérationnelle)
 
 ---
 
-## 🎯 Vue d'ensemble
+## Vue d'ensemble
 
 **HealthAI Coach** est composé de **4 briques principales** :
 
@@ -30,7 +30,7 @@ Le point d'entrée recommandé est le repository **Health-IA-Workspace**, qui au
 
 ---
 
-## 🏗️ Architecture du projet
+## Architecture du projet
 
 ```
 GroupMSPR
@@ -68,7 +68,7 @@ GroupMSPR
 
 ---
 
-## 📦 Repositories
+## Repositories
 
 ### 1. **Health-IA-Workspace** (Monorepo - Point d'entrée)
 **Langue** : Batch Script  
@@ -163,7 +163,7 @@ Dashboards Grafana préconfigurés pour la visualisation des données de santé.
 
 ---
 
-## 🚀 Guide de déploiement
+## Guide de déploiement
 
 ### Prérequis
 
@@ -304,7 +304,7 @@ Pour chaque dashboard :
 
 ---
 
-## 🛠️ Stack technologique
+## Stack technologique
 
 ### Backend
 - **Framework** : Laravel 12
@@ -343,7 +343,7 @@ Pour chaque dashboard :
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 ### Documentation complète
 
@@ -369,7 +369,7 @@ Chaque repository contient sa propre documentation :
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Impossible de se connecter à localhost:55432
 
@@ -407,7 +407,7 @@ Solution :
 
 ---
 
-## ✅ Checklist opérationnelle
+## Checklist opérationnelle
 
 Avant de considérer la plateforme opérationnelle, vérifier :
 
