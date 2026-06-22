@@ -1,13 +1,13 @@
 # 🏥 HealthAI Coach - MSPR Project
 
-Bienvenue dans l'organisation **GroupMSPR** ! Ce projet est une plateforme complète de coaching santé alimentée par l'IA, composée d'une API backend robuste, d'un pipeline ETL de traitement de données, d'une interface frontend moderne et d'une solution d'analyse d'images par vision par ordinateur.
+Bienvenue dans l'organisation **GroupMSPR** ! Ce projet est une plateforme complète de coaching santé alimentée par l'IA, composée d'une API backend robuste, d'un pipeline ETL de traitement de données, d'une interface web moderne, d'une API d'analyse IA, de dashboards de visualisation, et désormais d'une application mobile dédiée.
 
 ---
 
 ## 📋 Table des matières
 
 - [Vue d'ensemble](#vue-densemble)
-- [Architecture du projet](#architecture-du-projet)
+- [Architecture du projet](#architecture-dujet)
 - [Repositories](#repositories)
 - [Guide de déploiement](#guide-de-déploiement)
 - [Stack technologique](#stack-technologique)
@@ -19,12 +19,15 @@ Bienvenue dans l'organisation **GroupMSPR** ! Ce projet est une plateforme compl
 
 ## Vue d'ensemble
 
-**HealthAI Coach** est composé de **4 briques principales** :
+**HealthAI Coach** est composé de **7 briques principales** :
 
 1. **API Backend (Laravel + PostgreSQL)** - API REST pour gérer les utilisateurs, les données nutritionnelles et les métriques santé
 2. **ETL (Python)** - Pipeline d'ingestion et de transformation de données depuis Google Drive
 3. **Frontend (React + TypeScript)** - Interface utilisateur moderne et réactive
 4. **API IA (FastAPI + LLaVA/Ollama)** - Analyse d'images et extraction d'informations nutritionnelles via LLM
+5. **Grafana (Dashboards)** - Visualisation des données de santé
+6. **Mobile (TypeScript)** - Application mobile HealthAI Coach
+7. **Workspace (Orchestration)** - Point d'entrée et déploiement automatisé
 
 Le point d'entrée recommandé est le repository **Health-IA-Workspace**, qui automatise le déploiement de l'ensemble de la stack.
 
@@ -61,6 +64,11 @@ GroupMSPR
 │   ├── Dashboards
 │   ├── Data Sources
 │   └── Visualisations
+│
+├── Health-IA-Mobile (Application mobile)
+│   ├── Interface mobile
+│   ├── Parcours utilisateur santé
+│   └── Intégration API
 │
 └── .github (Documentation)
     └── README.md (Ce fichier)
@@ -160,6 +168,21 @@ Dashboards Grafana préconfigurés pour la visualisation des données de santé.
 - Dashboard Health Metrics
 
 **Topics** : `dashboard`, `data-visualization`, `grafana`, `graphics`
+
+---
+
+### 7. **Health-IA-Mobile** (Application mobile)
+**Langue** : TypeScript  
+**Repository** : [GroupMSPR/Health-IA-Mobile](https://github.com/GroupMSPR/Health-IA-Mobile)
+
+Application mobile du projet HealthAI Coach, dédiée à l'expérience utilisateur sur smartphone et à l'accès mobile aux fonctionnalités de suivi santé.
+
+**Fonctionnalités** :
+- Interface mobile TypeScript
+- Parcours utilisateur santé
+- Intégration avec les APIs du projet
+
+**Topics** : `mobile`, `typescript`, `healthai`
 
 ---
 
@@ -331,6 +354,10 @@ Pour chaque dashboard :
 - **Modèle** : LLaVA (via Ollama)
 - **Analyse** : Vision par ordinateur
 
+### Mobile
+- **Langage** : TypeScript
+- **Cible** : Application mobile HealthAI Coach
+
 ### Visualisation
 - **Outil** : Grafana
 - **Datasources** : PostgreSQL
@@ -355,6 +382,7 @@ Chaque repository contient sa propre documentation :
 - **[Health-IA-Frontend](https://github.com/GroupMSPR/Health-IA-Frontend)** - Documentation React et composants
 - **[Health-IA-FastAPI](https://github.com/GroupMSPR/Health-IA-FastAPI)** - Documentation API IA et intégration Ollama
 - **[Health-IA-Grafana](https://github.com/GroupMSPR/Health-IA-Grafana)** - Dashboards et visualisations
+- **[Health-IA-Mobile](https://github.com/GroupMSPR/Health-IA-Mobile)** - Application mobile et intégration API
 
 ### Ports utilisés
 
@@ -445,9 +473,10 @@ Tous les repositories de cette organisation sont publics et disponibles sur GitH
 | [Health-IA-Frontend](https://github.com/GroupMSPR/Health-IA-Frontend) | Interface utilisateur | TypeScript/React |
 | [Health-IA-FastAPI](https://github.com/GroupMSPR/Health-IA-FastAPI) | Analyse IA d'images | Python/FastAPI |
 | [Health-IA-Grafana](https://github.com/GroupMSPR/Health-IA-Grafana) | Dashboards de visualisation | JSON/Grafana |
+| [Health-IA-Mobile](https://github.com/GroupMSPR/Health-IA-Mobile) | Application mobile | TypeScript |
 
 ---
 
-**Dernière mise à jour** : 28 mai 2026
+**Dernière mise à jour** : 22 juin 2026
 
 Pour toute question ou problème, consultez la documentation spécifique de chaque repository ou ouvrez une issue dans le repository approprié.
