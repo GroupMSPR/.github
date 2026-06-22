@@ -1,17 +1,23 @@
 # 🏥 HealthAI Coach - MSPR Project
 
-Bienvenue dans l'organisation **GroupMSPR** ! Ce projet est une plateforme complète de coaching santé alimentée par l'IA, composée d'une API backend robuste, d'un pipeline ETL de traitement de données, d'une interface web moderne, d'une API d'analyse IA, de dashboards de visualisation, et désormais d'une application mobile dédiée.
+![Repos](https://img.shields.io/badge/Repositories-7-blue)
+![Stack](https://img.shields.io/badge/Stack-Laravel%20%7C%20React%20%7C%20FastAPI%20%7C%20TypeScript-brightgreen)
+![Updated](https://img.shields.io/badge/Updated-2026--06--22-orange)
+
+Bienvenue dans l'organisation **GroupMSPR** ! Ce projet est une plateforme complète de coaching santé alimentée par l'IA, composée d'une API backend robuste, d'un pipeline ETL de traitement de données, d'une interface web moderne, d'une API d'analyse IA, de dashboards de visualisation, et d'une application mobile dédiée.
 
 ---
 
 ## 📋 Table des matières
 
 - [Vue d'ensemble](#vue-densemble)
-- [Architecture du projet](#architecture-dujet)
+- [Architecture du projet](#architecture-du-projet)
+- [Statut des briques](#statut-des-briques)
 - [Repositories](#repositories)
 - [Guide de déploiement](#guide-de-déploiement)
 - [Stack technologique](#stack-technologique)
 - [Documentation](#documentation)
+- [Contribuer](#contribuer)
 - [Troubleshooting](#troubleshooting)
 - [Checklist opérationnelle](#checklist-opérationnelle)
 
@@ -21,13 +27,13 @@ Bienvenue dans l'organisation **GroupMSPR** ! Ce projet est une plateforme compl
 
 **HealthAI Coach** est composé de **7 briques principales** :
 
-1. **API Backend (Laravel + PostgreSQL)** - API REST pour gérer les utilisateurs, les données nutritionnelles et les métriques santé
-2. **ETL (Python)** - Pipeline d'ingestion et de transformation de données depuis Google Drive
-3. **Frontend (React + TypeScript)** - Interface utilisateur moderne et réactive
-4. **API IA (FastAPI + LLaVA/Ollama)** - Analyse d'images et extraction d'informations nutritionnelles via LLM
-5. **Grafana (Dashboards)** - Visualisation des données de santé
-6. **Mobile (TypeScript)** - Application mobile HealthAI Coach
-7. **Workspace (Orchestration)** - Point d'entrée et déploiement automatisé
+1. **API Backend (Laravel + PostgreSQL)** - API REST pour gérer les utilisateurs, les données nutritionnelles et les métriques santé  
+2. **ETL (Python)** - Pipeline d'ingestion et de transformation de données depuis Google Drive  
+3. **Frontend (React + TypeScript)** - Interface utilisateur moderne et réactive  
+4. **API IA (FastAPI + LLaVA/Ollama)** - Analyse d'images et extraction d'informations nutritionnelles via LLM  
+5. **Grafana (Dashboards)** - Visualisation des données de santé  
+6. **Mobile (TypeScript)** - Application mobile HealthAI Coach  
+7. **Workspace (Orchestration)** - Point d'entrée et déploiement automatisé  
 
 Le point d'entrée recommandé est le repository **Health-IA-Workspace**, qui automatise le déploiement de l'ensemble de la stack.
 
@@ -35,7 +41,7 @@ Le point d'entrée recommandé est le repository **Health-IA-Workspace**, qui au
 
 ## Architecture du projet
 
-```
+```text
 GroupMSPR
 ├── Health-IA-Workspace (Point d'entrée - Monorepo)
 │   └── start.bat (Lance l'ensemble du projet)
@@ -73,6 +79,20 @@ GroupMSPR
 └── .github (Documentation)
     └── README.md (Ce fichier)
 ```
+
+---
+
+## Statut des briques
+
+| Brique | Repository | Environnement | Statut | Documentation |
+|---|---|---|---|---|
+| Workspace | [Health-IA-Workspace](https://github.com/GroupMSPR/Health-IA-Workspace) | Docker/Batch | 🟢 Actif | ✅ |
+| Backend | [Health-IA-Backend](https://github.com/GroupMSPR/Health-IA-Backend) | Laravel/PostgreSQL | 🟢 Actif | ✅ |
+| ETL | [Health-IA-ETL](https://github.com/GroupMSPR/Health-IA-ETL) | Python | 🟢 Actif | ✅ |
+| Frontend | [Health-IA-Frontend](https://github.com/GroupMSPR/Health-IA-Frontend) | React/TypeScript | 🟢 Actif | ✅ |
+| API IA | [Health-IA-FastAPI](https://github.com/GroupMSPR/Health-IA-FastAPI) | FastAPI/Ollama | 🟢 Actif | ✅ |
+| Grafana | [Health-IA-Grafana](https://github.com/GroupMSPR/Health-IA-Grafana) | Dashboards | 🟢 Actif | ✅ |
+| Mobile | [Health-IA-Mobile](https://github.com/GroupMSPR/Health-IA-Mobile) | TypeScript Mobile | 🟢 Actif | ✅ |
 
 ---
 
@@ -244,7 +264,7 @@ Une fois le déploiement terminé, vérifier :
 
 ### Configuration PostgreSQL (DBeaver / PhpStorm)
 
-```
+```text
 Host: localhost
 Port: 55432
 Database: laravel
@@ -262,7 +282,7 @@ L'ETL nécessite une configuration supplémentaire :
 
 #### 1. Structure Google Drive obligatoire
 
-```
+```text
 ETL/
 ├── ToImport/          (Fichiers à traiter)
 ├── Archive/           (Fichiers traités)
@@ -387,13 +407,28 @@ Chaque repository contient sa propre documentation :
 ### Ports utilisés
 
 | Service | Port | URL |
-|---------|------|-----|
+|---|---:|---|
 | API Backend | 80 | http://localhost |
 | Admin Panel | 80 | http://localhost/admin |
 | Swagger API | 80 | http://localhost/api/documentation |
 | PostgreSQL (Windows) | 55432 | localhost:55432 |
 | Grafana | 3000 | http://localhost:3000 |
 | FastAPI | 4000 | http://localhost:4000/docs |
+
+---
+
+## Contribuer
+
+Pour contribuer efficacement :
+
+1. Ouvrir une **Issue** claire (bug, amélioration, tâche)
+2. Créer une branche dédiée (`feature/...`, `fix/...`)
+3. Ouvrir une **Pull Request** avec :
+   - contexte
+   - changements réalisés
+   - captures (si UI)
+   - checklist de tests
+4. Demander une review à au moins 1 membre de l’équipe
 
 ---
 
@@ -466,7 +501,7 @@ Tous les repositories de cette organisation sont publics et disponibles sur GitH
 ## 🔗 Liens rapides
 
 | Repository | Description | Langue |
-|-----------|-------------|--------|
+|---|---|---|
 | [Health-IA-Workspace](https://github.com/GroupMSPR/Health-IA-Workspace) | Point d'entrée & orchestration | Batch |
 | [Health-IA-Backend](https://github.com/GroupMSPR/Health-IA-Backend) | API REST & Base de données | PHP/Laravel |
 | [Health-IA-ETL](https://github.com/GroupMSPR/Health-IA-ETL) | Pipeline de données | Python |
